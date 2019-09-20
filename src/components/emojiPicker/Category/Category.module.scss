@@ -1,0 +1,19 @@
+.categoryName {
+  padding: 0 16px;
+  position: sticky;
+  top: 0;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 40px;
+  letter-spacing: -0.24px;
+  color: #171a1f;
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(16px);
+  text-transform: capitalize;
+}
+
+.emojiList {
+  padding: 0 16px 8px;
+  display: flex;
+  flex-wrap: wrap;
+}

@@ -1,0 +1,20 @@
+.emoji {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  font-size: 24px;
+  user-select: none;
+  cursor: pointer;
+
+  &:hover {
+    background: #f2f3f5;
+  }
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}

@@ -1,0 +1,41 @@
+.container {
+  position: relative;
+  width: 352px;
+  height: 480px;
+  background: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 48px rgba(0, 0, 0, 0.04), 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.heading {
+  font-size: 17px;
+  line-height: 48px;
+  font-weight: bold;
+  letter-spacing: -0.41px;
+  color: #171a1f;
+}
+
+.search {
+  margin-bottom: 8px;
+}
+
+.heading,
+.search {
+  padding: 0 16px;
+}
+
+.scroll {
+  height: 384px;
+  overflow: auto;
+}
+
+.scrollTall {
+  height: 432px;
+}
+
+.scrollSearch {
+  padding: 8px 0;
+  height: 384px;
+  overflow: auto;
+}
