@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useCallback, useState } from "react";
 import EmojiPicker from "../emojiPicker/EmojiPicker";
 
 import styles from "./App.module.scss";
@@ -6,7 +6,7 @@ import styles from "./App.module.scss";
 const App = () => {
   const [inputValue, setInputValue]: [string, (string) => void] = useState("");
 
-  const appendEmoji = (emoji: string) => setInputValue(inputValue + emoji);
+  const appendEmoji = useCallback((emoji: string) => setInputValue(inputValue => inputValue + emoji), []);
 
   return (
     <div className={styles.app}>

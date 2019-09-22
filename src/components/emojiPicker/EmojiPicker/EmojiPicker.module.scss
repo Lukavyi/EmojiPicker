@@ -14,28 +14,22 @@
   font-weight: bold;
   letter-spacing: -0.41px;
   color: #171a1f;
-}
-
-.search {
-  margin-bottom: 8px;
-}
-
-.heading,
-.search {
   padding: 0 16px;
 }
 
+.search {
+  padding: 0 16px 8px;
+}
+
 .scroll {
-  height: 384px;
-  overflow: auto;
-}
-
-.scrollTall {
   height: 432px;
+  overflow: auto;
 }
 
-.scrollSearch {
-  padding: 8px 0;
-  height: 384px;
-  overflow: auto;
+.paddingBottom {
+  padding-bottom: 48px;
+}
+
+.searchResults {
+  padding-top: 8px;
 }

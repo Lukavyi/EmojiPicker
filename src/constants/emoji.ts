@@ -25,11 +25,12 @@ const EMOJI_BY_CATEGORIES = mapEmojiByCategories(emojiList);
 
 export const CATEGORIES: ICategory[] = [
   {
-    name: "recent",
+    name: "frequently used",
     icon: {
       selected: recentSelected,
       base: recentBase,
     },
+    emoji: [],
   },
   {
     name: "people",

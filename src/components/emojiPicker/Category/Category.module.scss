@@ -14,6 +14,6 @@
 
 .emojiList {
   padding: 0 16px 8px;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
 }

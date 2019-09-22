@@ -10,7 +10,7 @@ interface FrequentlyUsed {
 const frequentlyUsedLocalStorage = localStorage.getItem("frequentlyUsed") || "{}";
 const frequentlyUsed: FrequentlyUsed = JSON.parse(frequentlyUsedLocalStorage);
 
-export const getFrequentlyUsed = (limit = 16) =>
+export const getFrequentlyUsed = (limit: number = 16): IEmojiJSON[] =>
   Object.entries(frequentlyUsed)
     .sort((a, b) => b[1].count - a[1].count)
     .slice(0, limit)

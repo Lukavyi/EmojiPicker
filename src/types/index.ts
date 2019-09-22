@@ -7,7 +7,7 @@ export type Unified = string;
 export interface IEmojiJSON {
   added_in: string;
   au: string | null;
-  category: string;
+  category: EmojiCategory;
   docomo: string | null;
   google: string | null;
   has_img_apple: boolean;
@@ -47,7 +47,7 @@ export interface ICategory {
     selected: ImageURL;
     base: ImageURL;
   };
-  emoji?: IEmojiJSON[];
+  emoji: IEmojiJSON[];
 }
 
 export type OnAddEmoji = (emoji: IEmojiJSON) => void;

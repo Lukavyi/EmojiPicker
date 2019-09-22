@@ -17,10 +17,14 @@
   padding-right: 16px;
   height: 40px;
   outline: none;
-  background: #F2F3F5;
+  background: #f2f3f5;
   border-radius: 8px;
   border: none;
   width: 100%;
+
+  &::-ms-clear {
+    display: none;
+  }
 }
 
 .clearButton {
