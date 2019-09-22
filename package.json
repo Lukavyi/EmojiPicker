@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "base": "./",
+  "homepage": "./",
   "dependencies": {
     "@types/lodash": "^4.14.138",
     "@types/node": "^12.7.5",
