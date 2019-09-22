@@ -34,7 +34,7 @@ const EmojiPicker: React.FC<Props> = ({ isOpen, onAddEmoji }) => {
   };
 
   useLayoutEffect(() => {
-    const handleScrollOrResize = throttle(() => {
+    const updateCategoryPickerOnScroll = throttle(() => {
       if (!searchTerm) {
         const isItemsRefEmpty = itemsRef.current && itemsRef.current.filter(item => item).length === 0;
         if (itemsRef.current && scrollContainerRef.current && !isItemsRefEmpty) {
@@ -50,12 +50,12 @@ const EmojiPicker: React.FC<Props> = ({ isOpen, onAddEmoji }) => {
     }, throttleInterval);
 
     if (scrollContainerRef.current) {
-      scrollContainerRef.current.addEventListener("scroll", handleScrollOrResize);
+      scrollContainerRef.current.addEventListener("scroll", updateCategoryPickerOnScroll);
     }
 
     return () => {
       if (scrollContainerRef.current) {
-        scrollContainerRef.current.removeEventListener("scroll", handleScrollOrResize);
+        scrollContainerRef.current.removeEventListener("scroll", updateCategoryPickerOnScroll);
       }
     };
   });
